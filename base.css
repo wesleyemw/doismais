@@ -1,0 +1,307 @@
+/* CSS base e preliminar */
+
+
+/* paleta de cores das secoes do index
+----------------
+
+
+pv #6B3667;
+paisagem #B23844;
+edifica #4F477C;
+design #33397E;
+expo #00A5B5;
+figurino #00A8DC;
+oficina #00BBEF;
+
+
+----------------
+*/
+
+
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+body {
+width: 1200px;
+margin: auto;
+font-family: Arial, sans-serif;
+}
+
+/*-----
+estilizacao do Header
+------*/
+
+#header {
+padding: 32.5px 0 0 25px;
+height: 87.5px;
+}
+
+/*-----
+estilizacao da barra de menus a esquerda - index e paginas de trabalhos
+------*/
+
+#barranavesq {
+width: 210px;
+padding: 0 15px 0 15px;
+float: left;
+}
+
+
+#barranavesq ul {
+list-style: none;
+height: 120px;
+}
+
+#barranavesq li.projetos {
+font-family: 'Arial Black', sans-serif;
+font-size: 18pt;
+}
+
+#barranavesq li.arquivo {
+font-family: 'Arial Black', sans-serif;
+font-size: 14pt;
+padding-left: 40px;
+}
+
+#barranavesq li.contato {
+font-family: 'Arial', sans-serif;
+font-size: 13pt;
+font-weight: bold;
+}
+
+#barranavesq li a:link, #barranavesq li a:visited {
+text-decoration: none;
+color: #000;
+}
+
+#barranavesq li a:hover {
+color: #888;
+}
+
+.cat {
+font-family: Arial, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+}
+
+.trab {
+font-family: 'Arial Black', sans-serif;
+font-size: 14pt;
+padding-left: 40px;
+margin-bottom: 30px;
+}
+
+.desc {
+font-family: Arial, sans-serif;
+font-size: 09pt;
+text-align: justify;
+/*
+font-size: 8pt;
+text-align: left;
+*/
+}
+
+.creditos {
+padding-top: 40px;
+font-size: 09pt;
+}
+
+.creditos li {
+font-family: Arial, sans-serif;
+}
+
+#autor span {
+font-family: "Arial Black", sans-serif;
+}
+
+/*-----
+estiliza��o do conteudo - index
+------*/
+
+#conteudo, #arquivo {
+width: 960px;
+float: right;
+}
+
+#arquivo {
+margin-top: 200px;
+}
+
+.colunas {
+width: 90px;
+float: left;
+}
+
+.colunas p, .colunas p a {
+width: 85px;
+height: 85px;
+border-right: #fff solid 5px;
+border-bottom: #fff solid 5px;
+z-index: 5;
+float: left;
+margin: 0;
+/* retirar depois */
+font-size: 11px;
+}
+
+.colunas p a span {
+display: block;
+width: 80px;
+height: 80px;
+padding: 5px;
+}
+
+.colunas p a:link {
+color: #fff;
+text-decoration: none;
+}
+
+.vazio {
+background-color: #fff;
+}
+
+/* comportamento dos links do index, em funcao das suas secoes  */
+
+.pv a:link {
+background-color: #6B3667;
+}
+
+.paisagem a:link {
+background-color: #B23844;
+}
+.edifica a:link {
+background-color: #4F477C;
+}
+.design a:link {
+background-color: #33397E;
+}
+.expo a:link {
+background-color: #00A5B5;
+}
+.figurino a:link {
+background-color: #00A8DC;
+}
+.oficina a:link {
+background-color: #00BBEF;
+}
+/* estilizacao do arquivo */
+
+#arquivo p a:link, #arquivo p a:visited {
+background-color: #7F7F7F;
+color: #fff;
+}
+
+#arquivo p a:hover {
+background-color: transparent;
+color: transparent;
+text-decoration: none;
+}
+
+/* estilizacao dos links do index */
+.pv a:hover, .paisagem a:hover, .edifica a:hover, .design a:hover, .expo a:hover, .figurino a:hover, .oficina a:hover {
+background-color: transparent;
+color: transparent;
+text-decoration: none;
+}
+
+/* estilizacao dos links do index */
+
+.colunas p a:visited {
+color: #fff;
+text-decoration: none;
+}
+
+.colunas p a:hover{
+color: transparent;
+text-decoration: none;
+}
+
+.colunas p img {
+float: left;
+position: relative;
+top: -90px;
+z-index: -5;
+}
+
+/*-----
+final da estiliza��o do conteudo - index
+------*/
+
+/*-----
+estilizacao do conteudo - pagina de trabalhos
+------*/
+
+.recheio {
+height: 120px;
+}
+
+img {
+padding-bottom: 30px;
+}
+
+.navprojetos {
+list-style: none;
+height: 30px;
+}
+
+.navprojetos li {
+float: left;
+width: 240px;
+text-align: center;
+font-size: 12pt;
+font-weight: bold;
+}
+
+/*-----
+estilizacao do conteudo - pagina de trabalhos
+------*/
+
+/*-----
+estilizacao do conteudo - a oficina
+------*/
+
+#oficina {
+width: 960px;
+float: right;
+padding-top: 70px;
+}
+
+p.about {
+font-size: 11px;
+margin-bottom: 20px;
+width: 500px;
+}
+
+.parceiros {	
+font-size: 11px;
+float: left;
+width: 150px;
+list-style: none;
+}
+
+.spacer {
+height: 50px;
+}
+
+div.contato {
+margin-top: 392px;
+}
+
+div.contato p {
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+div.contato address {
+font-size: 11px;
+font-style: normal;
+}
+
+/*-----
+estilizacao do conteudo - a oficina
+------*/
